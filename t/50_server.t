@@ -25,7 +25,9 @@ close $fh;
 my $data = decode_json($json);
 
 is_deeply($data, {
-    'body' => '{"message":"ytnobody, Welcome to Mojo and Azure Functions world!"}',
+    'body' => {
+        'message' => "ytnobody, Welcome to Mojo and Azure Functions world!"
+    },
     'headers' => {
         'Content-Type' => [
             'application/json;charset=UTF-8'
