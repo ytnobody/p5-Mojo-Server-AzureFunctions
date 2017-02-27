@@ -29,9 +29,7 @@ is_deeply($data, {
         'message' => "ytnobody, Welcome to Mojo and Azure Functions world!"
     },
     'headers' => {
-        'Content-Type' => [
-            'application/json;charset=UTF-8'
-        ]
+        'Content-Type' => 'application/json;charset=UTF-8',
     },
     'status' => 200
 });
